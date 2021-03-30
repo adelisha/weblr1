@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Хайруллина Аделина ПИ-320</title>
+	<script type="text/javascript" src="jquery.js"></script>			
+</head>
+<body style="background-color: bisque;">
+	<center>
+		<h2>Хайруллина А.Р. ПИ-320</h2>
+		<h2>Задание 4.</h2>
+		<a href="lr2.html">НАЗАД</a><br>
+		<p>Координаты</p>
+		<div class="coords">
+			X: <span class="x"></span><br>
+			Y: <span class="y"></span>
+		</div>  
+		<script type="text/javascript">
+			$(document).mousemove(function(event){
+				event = event || window.event; 
+				console.log(event); 
+				document.querySelector('.x').innerHTML = event.offsetX;
+				document.querySelector('.y').innerHTML = event.offsetY;})</script>
+</center>	
+</body>
+</html>
