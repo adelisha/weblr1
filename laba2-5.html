@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+	<title>Хайруллина Аделина ПИ-320</title>
+    <style type="text/css">
+        #drag {font-size: 30px; border: 3px double brown;
+            width: 400px; text-align: center}
+    </style>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$('#drag').mousemove(function(event) {
+			$('#drag').draggable();
+		});
+	});
+    </script> 
+</head>
+<body style="background-color: bisque;">
+	<center>
+		<h2>Хайруллина А.Р. ПИ-320</h2>
+		<h2>Задание 5.</h2>
+    <div id="drag">
+        Блок перетаскивания
+    </div>
+</body>
+</html>
