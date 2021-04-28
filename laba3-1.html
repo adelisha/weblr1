@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Хайруллина Аделина ПИ-320</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		let tek = 5;
+		function morenews(str) {
+			if (str.length==0) {
+			document.getElementById("news").innerHTML="";
+			return;
+			}
+			if (window.XMLHttpRequest) {
+				xmlhttp=new XMLHttpRequest();
+			} else {  
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+				if (this.readyState==4 && this.status==200) {
+  					document.getElementById("news").innerHTML=this.responseText;
+				}}
+		   	xmlhttp.open("GET","rss.php?tek="+tek,true);
+		  	 xmlhttp.send();
+		   	tek+=5;}
+	 </script>
+</head>
+<body style="background-color: bisque;">
+	<center>
+		<h2>Хайруллина А.Р. ПИ-320</h2>
+		<h2>Задание 1.</h2>
+		<div style='width: 500px; border: 3px solid white; background-color: white'>
+			<h3 style="font-weight: bold">
+				ГЛАС.RU: На Луне астронавты США обнаружили корабль внеземных цивилизаций и древние руины
+			</h3>
+			<p>
+				Астронавт из Америки являлся одним из участников миссии "Аполон-20", которая была засекречена до недавнего времени, пишет информационное издание "Рязань Онлайн".
+			</p>
+			<img src="https://images.sm-news.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/04/28/planet_surface_one-1200x675.png.webp" alt="" style='width: 400px;'>
+		</div>
+		<br>
+		<div style='width: 500px; border: 3px solid white; background-color: white'>
+			<h3 style="font-weight: bold">
+				Netflix опубликовал топ-20 своих самых популярных фильмов
+			</h3>
+			<p>
+				Стриминговый сервис представил двадцатку наиболее популярных картин из каталога Netflix Originals. Лидером рейтинга стал боевик «Тайлер Рейк: Операция по спасению».
+			</p>
+			<img src="https://portal-kultura.ru/upload/iblock/304/%D0%BA%D1%80%D0%B8%D1%81%20%D1%85%D0%B5%D0%BC%D1%81%D0%B2%D0%BE%D1%80%D1%82.jpg" alt="" style='width: 400px;'>
+		</div>
+		<br>
+		<div style='width: 500px; border: 3px solid white; background-color: white'>
+			<h3 style="font-weight: bold">
+				Nature: Учёными-нейробиологами из США обнаружено «вращение» воспоминаний
+			</h3>
+			<p>
+				На страницах издания Nature Neuroscience опубликован материал, посвященный новому исследованию ученых из Принстонского университета в Соединенных Штатах.
+			</p>
+			<img src="https://yandex-news.clstorage.net/k25U33b64/fb533bKHr7GE/0pn7tF0T3bDzq4Nk3U9tqIo9ecKWxoug-gdviH0xExlfwhVaNZ7Vvy6xc-mYInxXb2WidoKFJnfL5VqHNquVAPIoesQcM6nl56qCsUn7fBxbqIz39LGZUrlgbQsO57AbXgN0joDqJNt6l7WJaEfPFZ_293DlRDLQj5T5YhQeA7bkTBzEniCN0pCY5_evbwlbih4aklQDGQK7g_6a7iRAqOyhRBwyW1Oo2qV2Xak3TSfth_fgx3Rj4u_mahIkX7Bl1w88xCziX9DA2SWlXE05eijMioH1kBoR-bIdG2z18ug_cGVc4vqDWHpmF3xpJ-6HjEVmQZcmcOGuJlvgFh_Tt3SfPdSOwvyhkxo1Fq8feutof1uQluEbYshwDIqMh-C5jyNW3eJ4sqjYtvYt6vWepG1VpoMWxBMhzpXaILWfsnakTJ4VTfPuYtIaJNWubvp5iu15sFbDStKa0V-rfLeBGw2ixA7xiPMLa_XkTMlkbDcP55RSNhRi8bxkSAAVrpKklC0_lP4i_rDx2uenbb15aDhOGxC30TmTi6LNeu_1chlPQebfwenjSVq0Z94JNS4EbbbFITdVICIvtRoC9B_zFsZujCQ_cO6Ss9hXJkyOKBl6_0nydnBLsfpzXGkvN4HrDrPUfAM7wapJNdYMGRY-VYx0NjL19XGjH-UaIJfuwfWUna80vFFNs7DqFdU_7Ntb6P_YA5YS6yIJAu2ITUSRGU2zFU1SO-MpG_R3fBiHn1XNpxXi58UDUk10G_MkPNHm156tBTyBLjIR-qfU3x_Zabssi1BXYBswSRHfWx4Xodl8MTUfQnqwGImGVR9bR-1GDQc1Qpalk1PP5cjyJg1hpNe-fXdOwewhggpldRwvKbuJjvsSl2BJA7gBLwq-F6JIPNEGfhHpYKo6plQfqVbfxd33NrFHhaOT30YKYqRdgQU3zc1WnmEtU5GIpbYubTuoCHy5wcdSywKLMI8rDWUx-R7x5-7SOWAoCLYWbxjF7hfN1eRi5iUhgf5Xe4CnfHA2x-wfNW3jjjPTiISWLD0LOplPCdLlYXpQS_Lfe71VoQr-kwcPozuQuAl11W8rRZwmX8TmItYkIPBt1xmDZG3wN5UuTlc-8WwR8yqXFB5NWRgoT8tytSJ58MuSHdqOZ0A5TNBmnuKq8Ms5dORteyZcpG2GJkAFVzAirHf5gmZt4AWXHWxEPuGMIHH65OTN7ThKmQ36IDeACGHL0h3bfOdx-54zdV6hmMFaSbUU3Cr3DAQflIVypRSy4P-FSeBErVG0RJ2fBg4iX5PQGSbkvczJq6gMmBL3Mlvh-tIM6X1m8rnPYnXOoDvC-oqWdVzJ5RyFnnQVUJSVIbOMhDuC532DhKQePBVtQtyjcmn21p5OOep4DRvjxiDrgOmBXXp-Z1Ob_1EHLaKrszobpjYtm_VuZk8FBkKmNWAD7oeIkMf98ke3f-42PqO-waAKx5bPvzpbea0Z0IUBOBBoU36Yr2fwOy3xhT4SycAZG3YH3FnELCcvVsRxNIYxIu7F-mN2_NC1JUxNls8DTMKxGFbUn2_Likjv6CC1ANpAunI-as00U9g90DXMcniS6nrmlK_oFP0G3za1QQYXgSCdpTlhdeyzh7RvnXQ8Q45SYnpH1X2-uXubfJvTVhI6INuwjcheV0GK7wAkHHCbElsKlGbsWff-9P_WlJDmJDFAXGRqYNZv0dakXm5UnwHfoGP51IedX0poiK_5Y5VxyOD5kSy5rScC2V9R1v3B2eNb2YQnPYqWHFcN1WSBxuWwAb4XKeM3rOJGZ1wsRW0jLkDSSCXXTB5LWFruCMC38zrQidFdGM7V0yns43X_Q5nSKLuV1p459-73H5UUEMWHg-M91HiitDywRzZdbydesb3y8sp09Lyd2aqaHatAd_Ap0GmxP2pcBGGovvEWTkLbUzt6RhUM6pdPBQ625cNnB5BhPuZrkoesocaWTx0lLJG9cfGaxcQsXIgLWz8ZsbcDewBpcx54f1byGO3B9k5QWqBJeLU2nPn3PVfd5DQB5afg8a-FGlA3f7B3BUxeJN3xvOCS-ITFL68Jymit2wB1oBpCOaA_OP0n8ZtPIOVccgtDSrpmNS5aJW6V_7YXISdGsbLvVjrjdP9zt4SefRT98m1xg-rXND2MSZtI3YmS1nCKEopjvKhdd4Ar_0G3PNLak0h4pUadS_UPV_1XlXEnJLPhzYXqAUT_UNTmX-xF3XFcUsKrp8bf7VvpaK65YoXAS6A58J_IXNbx2D1CJM-TqiOrasYm_wnG3QQd19RhV2azg6-1-KKkzYKk1Z5OFWwTT_Fiu7fWfn86Oog_a1HX88tgi3Hv2u4GU5t80dYN8xswKXhHRw4LBU6lTjUEcvf3UCB8BOrjpg-C5KW9rHdfcJ6yEriVNC3tKXn4_BrQVgJ5cDkDjKsMpsMYnjF0_pLIgEvLlxf_yqcvZj-X5SMGhBJQzHYqEPQ9gvalg#DSD" alt="" style='width: 400px;'>
+		</div>
+		<br>
+		<div style='width: 500px; border: 3px solid white; background-color: white'>
+			<h3 style="font-weight: bold">
+				SA: Опубликованы первые фотографии электрона внутри экситона
+			</h3>
+			<p>
+				Физикам из Японии, Индии и США удалось провести визуализацию волновых функций экситонов в монослое диселенида вольфрама.
+			</p>
+			<img src="https://avatars.mds.yandex.net/get-ynews/1875116/20fde90241f8d80557e3bcf77367f150/254x173" alt="" style='width: 400px;'>
+		</div>
+		<br>
+		<div style='width: 500px; border: 3px solid white; background-color: white'>
+			<h3 style="font-weight: bold">
+				Instagram создаст биржу брендированного контента и запустит партнерскую программу
+			</h3>
+			<p>
+				Instagram анонсировал три инструмента, которые позволят создателям контента увеличить свои доходы.
+			</p>
+			<img src="https://yandex-news.clstorage.net/k25U33b64/fb533bKHr7GE/0pn7tF0T3bDzq4Nk3U9tqIo9ecKWxoug-gdviH0xExlfwhVaNZ7VTx7BE_mdUiwC_3XSQ_f1RkLrRT9Xk8tgsKKtHxRcFuywx8qikQn7fBxbqIz39LGZUrlgbQsO57AbXgN0joDqJNt6l7WJaEfPFZ_293DlRDLQj5T5YhQeA7bkTBzEniCN0pCY5_evbwlbih4aklQDGQK7g_6a7iRAqOyhRBwyW1Oo2qV2Xak3TSfth_fgx3Rj4u_mahIkX7Bl1w88xCziX9DA2SWlXE05eijMioH1kBoR-bIdG2z18ug_cGVc4vqDWHpmF3xpJ-6HjEVmQZcmcOGuJlvgFh_Tt3SfPdSOwvyhkxo1Fq8feutof1uQluEbYshwDIqMh-C5jyNW3eJ4sqjYtvYt6vWepG1VpoMWxBMhzpXaILWfsnakTJ4VTfPuYtIaJNWubvp5iu15sFbDStKa0V-rfLeBGw2ixA7xiPMLa_XkTMlkbDcP55RSNhRi8bxkSAAVrpKklC0_lP4i_rDx2uenbb15aDhOGxC30TmTi6LNeu_1chlPQebfwenjSVq0Z94JNS4EbbbFITdVICIvtRoC9B_zFsZujCQ_cO6Ss9hXJkyOKBl6_0nydnBLsfpzXGkvN4HrDrPUfAM7wapJNdYMGRY-VYx0NjL19XGjH-UaIJfuwfWUna80vFFNs7DqFdU_7Ntb6P_YA5YS6yIJAu2ITUSRGU2zFU1SO-MpG_R3fBiHn1XNpxXi58UDUk10G_MkPNHm156tBTyBLjIR-qfU3x_Zabssi1BXYBswSRHfWx4Xodl8MTUfQnqwGImGVR9bR-1GDQc1Qpalk1PP5cjyJg1hpNe-fXdOwewhggpldRwvKbuJjvsSl2BJA7gBLwq-F6JIPNEGfhHpYKo6plQfqVbfxd33NrFHhaOT30YKYqRdgQU3zc1WnmEtU5GIpbYubTuoCHy5wcdSywKLMI8rDWUx-R7x5-7SOWAoCLYWbxjF7hfN1eRi5iUhgf5Xe4CnfHA2x-wfNW3jjjPTiISWLD0LOplPCdLlYXpQS_Lfe71VoQr-kwcPozuQuAl11W8rRZwmX8TmItYkIPBt1xmDZG3wN5UuTlc-8WwR8yqXFB5NWRgoT8tytSJ58MuSHdqOZ0A5TNBmnuKq8Ms5dORteyZcpG2GJkAFVzAirHf5gmZt4AWXHWxEPuGMIHH65OTN7ThKmQ36IDeACGHL0h3bfOdx-54zdV6hmMFaSbUU3Cr3DAQflIVypRSy4P-FSeBErVG0RJ2fBg4iX5PQGSbkvczJq6gMmBL3Mlvh-tIM6X1m8rnPYnXOoDvC-oqWdVzJ5RyFnnQVUJSVIbOMhDuC532DhKQePBVtQtyjcmn21p5OOep4DRvjxiDrgOmBXXp-Z1Ob_1EHLaKrszobpjYtm_VuZk8FBkKmNWAD7oeIkMf98ke3f-42PqO-waAKx5bPvzpbea0Z0IUBOBBoU36Yr2fwOy3xhT4SycAZG3YH3FnELCcvVsRxNIYxIu7F-mN2_NC1JUxNls8DTMKxGFbUn2_Likjv6CC1ANpAunI-as00U9g90DXMcniS6nrmlK_oFP0G3za1QQYXgSCdpTlhdeyzh7RvnXQ8Q45SYnpH1X2-uXubfJvTVhI6INuwjcheV0GK7wAkHHCbElsKlGbsWff-9P_WlJDmJDFAXGRqYNZv0dakXm5UnwHfoGP51IedX0poiK_5Y5VxyOD5kSy5rScC2V9R1v3B2eNb2YQnPYqWHFcN1WSBxuWwAb4XKeM3rOJGZ1wsRW0jLkDSSCXXTB5LWFruCMC38zrQidFdGM7V0yns43X_Q5nSKLuV1p459-73H5UUEMWHg-M91HiitDywRzZdbydesb3y8sp09Lyd2aqaHatAd_Ap0GmxP2pcBGGovvEWTkLbUzt6RhUM6pdPBQ625cNnB5BhPuZrkoesocaWTx0lLJG9cfGaxcQsXIgLWz8ZsbcDewBpcx54f1byGO3B9k5QWqBJeLU2nPn3PVfd5DQB5afg8a-FGlA3f7B3BUxeJN3xvOCS-ITFL68Jymit2wB1oBpCOaA_OP0n8ZtPIOVccgtDSrpmNS5aJW6V_7YXISdGsbLvVjrjdP9zt4SefRT98m1xg-rXND2MSZtI3YmS1nCKEopjvKhdd4Ar_0G3PNLak0h4pUadS_UPV_1XlXEnJLPhzYXqAUT_UNTmX-xF3XFcUsKrp8bf7VvpaK65YoXAS6A58J_IXNbx2D1CJM-TqiOrasYm_wnG3QQd19RhV2azg6-1-KKkzYKk1Z5OFWwTT_Fiu7fWfn86Oog_a1HX88tgi3Hv2u4GU5t80dYN8xswKXhHRw4LBU6lTjUEcvf3UCB8BOrjpg-C5KW9rHdfcJ6yEriVNC3tKXn4_BrQVgJ5cDkDjKsMpsMYnjF0_pLIgEvLlxf_yqcvZj-X5SMGhBJQzHYqEPQ9gvalg" alt="" style='width: 400px;'>
+		</div>
+		<br>
+		<span id = "news"></span>
+		<form>
+			<input onclick = "morenews(this.value)" type="button" value="загрузить" style="background-color: white; border-color: white;">
+		</form>
+		<a href="lr3.html">НАЗАД</a>
+</center>	
+</body>
+</html>
