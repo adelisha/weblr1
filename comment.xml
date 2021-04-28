@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spisok>
+   <comments>
+      <name>
+         Аделина
+      </name>
+      <email>
+         adelina.kh00@gmail.com
+      </email>
+      <comment>
+         Невероятно трогательный мультфильм, который заставляет задуматься! всем советую
+      </comment>
+   </comments>
+   <comments>
+      <name>
+         Маша
+      </name>
+      <email>
+         m.m@gmail.com
+      </email>
+      <comment>
+        Ходили всей семьей и плакали...
+      </comment>
+   </comments>
+   <comments>
+      <name>
+         Стас
+      </name>
+      <email>
+         ivanov130598@mail.ru
+      </email>
+      <comment>
+         Заслуженный Оскар! красивая рисовка, глубокая мысль.
+      </comment>
+   </comments>
+   <comments>
+      <name>
+         Алена
+      </name>
+      <email>
+         missprincess@mail.ru
+      </email>
+      <comment>
+         Мне понравился
+      </comment>
+   </comments>
+</spisok>
