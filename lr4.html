@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Хайруллина Аделина ПИ-320</title>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="jquery-ui.js"></script>
+</head>
+<body style="background-color: bisque;">
+	<center>
+		<h2>Хайруллина А.Р. ПИ-320</h2>
+		<h1>Лабораторная работа №4</h1>
+		<h2>Вариант 2 - перечень туров, форма заявки на тур</h2>
+		<span id="accordion">
+			<h2 class="to" style="width: 53%;">Оленевка Village</h2> <div style="width: 50%; height: 600px;">
+				<img src="https://f.otzyv.ru/f/10/01/45225/1705171144244.jpg" alt="оленевка" style=" width: 48%;">
+				<img src="https://avatars.mds.yandex.net/get-zen_doc/1711517/pub_5db7efc0028d6800b14f8be0_5db7f1b443fdc000ae6c6f28/scale_1200" alt="оленевка" style=" width: 48%;">
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/db0e992bfbc498614b7b657b6a518abc/" alt="оленевка" style=" width: 48%;">
+			  <img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/14833b821563c41777054560922d7cf2/" alt="оленевка" style=" width: 48%;">
+			  <p><span style="font-weight: 700;">Оленевка в Крыму </span><br><br>				
+				1-я линия<br>
+				10 м до моря<br>
+				Песчаный пляж<br>
+				Бесплатный Wi-Fi<br>
+				<button class="button1">Забронировать тур</button></p>
+			</div>
+			  
+			<h2 class="to" style="width: 53%;">Sun & Sands Downtownа</h2> 
+			<div style="width: 50%;">
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/eb45825bc9c0e9a99e765538789e91a0/" alt="Дубаи" style=" width: 48%;">
+			  <img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/6f70cc8d53f5925d893c917daec45072/" alt="Дубаи" style=" width: 48%;"><br>
+			  <img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/f3fb2d71f6c29dd179ddbc4e31526c94/" alt="Дубаи" style=" width: 48%;">
+			  <img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/44028504838d3946ce9743ad4181a247/" alt="Дубаи" style=" width: 48%;"><br>
+			  <p><span style="font-weight: 700;">Дубай</span><br><br>				
+				Песчаный пляж<br>
+				Бесплатный Wi-Fi<br>
+				7000 м до моря<br>
+				<br><br>
+				<button class="button2">Забронировать тур</button></p> </p>
+			</div>
+			   
+			 <h2 class="to" style="width: 53%;">Malin Patong </h2> 
+			 <div style="width: 50%;">
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/8b117e26b6aa15c290c5986ace029e16/" alt="Таиланд" style=" width: 48%;">
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/eabcbb1934ab3e96fff8416f20f9400d/" alt="Таиланд" style=" width: 48%;"><br>
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/eaaf7e8e7799f1b68afd87d2fc6d41a9/" alt="Таиланд" style=" width: 48%;">
+				<img src="https://cdn2.tu-tu.ru/image/tours_hotel_full/1/fdf975f2c1f6d7aff00c1b992b7b7d07/" alt="Таиланд" style=" width: 48%;"><br>
+			<p><span style="font-weight: 700;">Патонг на Пхукете </span><br>  <br> 
+				700 м до моря<br> 
+				Песчаный пляж<br> 
+				Бесплатный Wi-Fi<br> 
+				Не 1-я линия
+				<br><br>
+			  <button class="button3">Забронировать тур</button></p> 
+			 </div>
+				
+			
+			</span>
+			<div class="dialog1" title="Забронировать тур в Оленевка Village">
+				<h3>Заполните информацию для брони</h3>
+				<form>
+				  Фамилия: <input type="text" size="50"><br><br>
+				  Имя: <input type="text" size="55"><br><br>
+				  Отчество: <input type="text" size="50"><br><br>
+				  Выбранный тур: <input type="text" class="tur" size="43"><br><br>
+				  Дата отъезда:  <input type="text"  class="date"><br><br>
+				  Количество дней на отдыхе: <input type="text" id="k1"><br><br>
+				  Серия и номер паспорта: <input type="text"><a href="#" title="Записывайте через пробел: сначала серия, потом номер"> ?</a><br><br>
+				  EMAIL: <input type="text"><br><br>
+				  Телефон для связи: <input type="text"><br><br><br>
+
+				  Стоимость тура составит: <span name="comment"  id="cost1">...</span> <input type="button" id="rasc1" value="Рассчитать"><br><br>
+				  <input type="button" class="send" value="Отправить">
+				</form>
+				
+			  </div>
+			  <div class="dialog3" title="Забронировать тур в Malin Patong (Таиланд)">
+				<h3>Заполните информацию для брони</h3>
+				<form>
+				  Фамилия: <input type="text" size="50"><br><br>
+				  Имя: <input type="text" size="55"><br><br>
+				  Отчество: <input type="text" size="50"><br><br>
+				  Выбранный тур: <input type="text" class="tur" size="43"><br><br>
+				  Дата отъезда:  <input type="text"  class="date"><br><br>
+				  Количество дней на отдыхе: <input type="text" id="k3"><br><br>
+				  Серия и номер паспорта: <input type="text"><a href="#" title="Записывайте через пробел: сначала серия, потом номер"> ?</a><br><br>
+				  EMAIL: <input type="text"><br><br>
+				  Телефон для связи: <input type="text"><br><br><br>
+
+				  Стоимость тура составит: <span name="comment"  id="cost3">...</span> <input type="button" id="rasc3" value="Рассчитать"><br><br>
+				  <input type="button" class="send" value="Отправить">
+				</form>
+				
+			  </div>
+			  <div class="dialog2" title="Забронировать тур в Sun & Sands Downtownа">
+				<h3>Заполните информацию для брони</h3>
+				<form>
+				  Фамилия: <input type="text" size="50"><br><br>
+				  Имя: <input type="text" size="55"><br><br>
+				  Отчество: <input type="text" size="50"><br><br>
+				  Выбранный тур: <input type="text" class="tur" size="43"><br><br>
+				  Дата отъезда:  <input type="text"  class="date"><br><br>
+				  Количество дней на отдыхе: <input type="text" id="k2"><br><br>
+				  Серия и номер паспорта: <input type="text"><a href="#" title="Записывайте через пробел: сначала серия, потом номер"> ?</a><br><br>
+				  EMAIL: <input type="text"><br><br>
+				  Телефон для связи: <input type="text"><br><br><br>
+
+				  Стоимость тура составит: <span name="comment"  id="cost2">...</span> <input type="button" id="rasc2" value="Рассчитать"><br><br>
+				  <input type="button" class="send" value="Отправить">
+				</form>
+				
+			  </div>
+			  <div class="dia" title="Отправить бронь?">Ответьте "Да", если подтверждаете бронирование</div>
+			  <div class="yes" title="Бронь отправлена">Спасибо! <br>Оцените качество предлагаемых туров: <p style="display: inline;" class="sliderValue"></p> %
+				<br><br>
+				<div class="slider" style="width: 100%;"></div></div>
+			  <div class="no" title="Бронь не отправлена">Хорошо.<br>Оцените качество предлагаемых туров:<p style="display: inline;" class="sliderValue"></p> %
+				<br><br>
+				<div class="slider" style="width: 100%;"></div></div>
+		<a  href="index.html">НАЗАД</a>
+	</center>
+	<script>
+		 $(function(){
+			$( ".yes" ).dialog({autoOpen: false, width: 300}); 
+			$( ".no" ).dialog({autoOpen: false, width: 300}); 
+			$('.dia').dialog({ autoOpen: false, width: 300, buttons:{
+        "Да": function(){ $( ".yes" ).dialog('open');   },
+        "Нет": function(){$( ".no" ).dialog('open');}
+    }})
+	$('.slider').slider({
+		    min: 0,
+	    	max: 100,
+        change: function (event, ui){
+            var val = $('.slider').slider('value');
+            $('.sliderValue').html(val);
+        }
+    });
+			$("#accordion" ).accordion({  collapsible: true }); 
+			$("td.td_top a").tooltip();
+			$(".date").datepicker({ dateFormat: "dd.mm.yy" });
+			$( ".dialog1" ).dialog({autoOpen: false, width: 500}); 
+			$( ".dialog2" ).dialog({autoOpen: false, width: 500});
+			$( ".dialog3" ).dialog({autoOpen: false, width: 500});
+		$('#tabs').tabs();
+		$(".button1").click(function(){ 	
+        	$( ".dialog1" ).dialog('open'); 
+      	})
+		  $(".button2").click(function(){ 
+        	$( ".dialog2" ).dialog('open'); 
+      	})
+		  $(".button3").click(function(){ 
+        	$( ".dialog3" ).dialog('open'); 
+      	})
+		  var tur = ["Оленевка Village в Крыму", "Sun & Sands Downtownа в Дубай", "Malin Patong на Пхукете (Таиланд)"]; 
+	  $(".tur" ).click(function(){
+		$(".tur").autocomplete({ source: tur });
+	});
+	$("#rasc1" ).click(function(){
+    var k = document.getElementById("k1");
+	var knew = k.value;
+    var rach = 3500*knew
+    document.getElementById('cost1').innerHTML = rach;
+  })
+  $("#rasc2" ).click(function(){
+    var k2 = document.getElementById("k2");
+	var knew2 = k2.value;
+    var rach2 = 5000*knew2
+    document.getElementById('cost2').innerHTML = rach2;
+  })
+  $("#rasc3" ).click(function(){
+    var k3 = document.getElementById("k3");
+	var knew3 = k3.value;
+    var rach3 = 5200*knew3
+    document.getElementById('cost3').innerHTML = rach3;
+  })
+  $(".send" ).click(function(){
+		$('.dia').dialog('open'); })
+		 })
+	</script> 
+</body>
+</html>
