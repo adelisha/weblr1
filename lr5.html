@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Хайруллина Аделина ПИ-320</title>
+	<link rel="stylesheet" href="jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="jquery-ui.js"></script>
+<script src="jquery.myPlugin.js"></script>
+	<style>
+		#kub1, #kub2 {
+			width: 50px;
+			height: 50px;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body style="background-color: bisque;">
+	<center>
+		<h2>Хайруллина А.Р. ПИ-320</h2>
+		<h1>Лабораторная работа №5</h1>
+		<h2>Игра "Бросание кубиков"</h2>
+		<input type="text" id="kub1"> <input type="text" id="kub2">
+		<br><br>
+		<input type="button" value="мой ход" id="hod"><br><br>
+		<span id="schet"></span>
+		<h3>Счет: <span id="itogo2">0</span>:<span id="itogo1">0</span></h3>
+		<br>
+		<div id="start" title="Правила игры"><p>Определите кому больше везет: Вам или компьютеру? Нажимайте на "мой ход", ждите "бросание кубика"
+			, затем дожидайтесь результата компьютера, следите за светом и играйте до 6 побед! Удачи!!!</p></div>
+		<a  href="index.html">НАЗАД</a>
+	</center>
+	<script>
+		$(function(){
+			$('#start').dialog({  width: 300, buttons:{
+        "Играть": function(){ $('#start').myPlugin('start'); $('#start').dialog('close')}}});
+		})
+		
+	
+	</script> 
+</body>
+</html>
